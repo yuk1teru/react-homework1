@@ -1,3 +1,3 @@
 function Profile() {
-  return <h1>test.a</h1>;
+  return <h1>{test.a}</h1>;
 }
