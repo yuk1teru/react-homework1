@@ -1,8 +1,4 @@
 function Profile() {
-  return (
-    <h1>
-      {test.b}
-      {test.a}
-    </h1>
-  );
+  return <h1>{test.b}</h1>;
 }
+export default Profile;
