@@ -1,6 +1,8 @@
+import React from 'react';
+import PropTypes from 'prop-types';
 import s from './Profile.module.css';
 
-export default function Profile({ username, tag, location, avatar, stats }) {
+function Profile({ username, tag, location, avatar, stats }) {
   return (
     <div className={s.profile}>
       <div className="description">
@@ -27,3 +29,13 @@ export default function Profile({ username, tag, location, avatar, stats }) {
     </div>
   );
 }
+
+Profile.propTypes = {
+  username: PropTypes.string,
+  tag: PropTypes.string,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.objectOf(PropTypes.number),
+};
+
+export default Profile;
